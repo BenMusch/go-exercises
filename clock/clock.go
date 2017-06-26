@@ -14,9 +14,8 @@ type Clock struct {
 func pad(num int) string {
 	if num < 10 {
 		return fmt.Sprintf("0%v", num)
-	} else {
-		return fmt.Sprintf("%v", num)
 	}
+	return fmt.Sprintf("%v", num)
 }
 
 // normalizes the minutes/hours in a clock for negative values or overflows
